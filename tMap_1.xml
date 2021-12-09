@@ -1,0 +1,49 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Name" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_1" preview="pictures/_lyL8gECVEeyCc_mYUlvhYA-tMap_1-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as:">AUTO</column>
+    <column name="Temp data directory path:"></column>
+    <column name="Max buffer size (nb of rows):">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="out1" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="bewolking" type="String" expression="" isNullable="true"/>
+        <entry name="gem_temp" type="String" expression="" isNullable="true"/>
+        <entry name="gevoels_temp" type="String" expression="" isNullable="true"/>
+        <entry name="min_temp" type="String" expression="" isNullable="true"/>
+        <entry name="Max_temp" type="String" expression="" isNullable="true"/>
+        <entry name="windkracht" type="String" expression="" isNullable="true"/>
+        <entry name="datum" type="String" expression="" isNullable="true"/>
+        <entry name="zonopkomst" type="String" expression="" isNullable="true"/>
+        <entry name="zonondergang" type="String" expression="" isNullable="true"/>
+        <entry name="plaats" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="out2" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="bewolking" type="String" expression="out1.bewolking " isNullable="true"/>
+        <entry name="gem_temp" type="String" expression="out1.gem_temp + &quot; C&quot; " isNullable="true"/>
+        <entry name="gevoels_temp" type="String" expression="out1.gevoels_temp + &quot; C&quot; " isNullable="true"/>
+        <entry name="min_temp" type="String" expression="out1.min_temp + &quot; C&quot; " isNullable="true"/>
+        <entry name="Max_temp" type="String" expression="out1.Max_temp + &quot; C&quot; " isNullable="true"/>
+        <entry name="windkracht" type="String" expression="out1.windkracht + &quot; meter/sec&quot; " isNullable="true"/>
+        <entry name="datum" type="java.util.Date" expression="(out1.datum  == null || out1.datum  ==&quot;&quot;) ? null : (new java.util.Date(Long.parseLong(out1.datum ) * 1000) ); " isNullable="true"/>
+        <entry name="zonopkomst" type="java.util.Date" expression="(out1.zonopkomst   == null || out1.zonopkomst   ==&quot;&quot;) ? null : (new java.util.Date(Long.parseLong(out1.zonopkomst  ) * 1000) ); " isNullable="true"/>
+        <entry name="zonondergang" type="java.util.Date" expression="(out1.zonondergang   == null || out1.zonondergang    ==&quot;&quot;) ? null : (new java.util.Date(Long.parseLong(out1.zonondergang   ) * 1000) ); " isNullable="true"/>
+        <entry name="plaats" type="String" expression="out1.plaats " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>
