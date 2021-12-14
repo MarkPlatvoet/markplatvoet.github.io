@@ -11,7 +11,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-https://intodatabv.github.io/documentation/IDEXX/LINONB/j003_Extract_Files_Parallel_img_0.2.html
+[link to doc from other repo page] (https://intodatabv.github.io/documentation/IDEXX/LINONB/j003_Extract_Files_Parallel_img_0.2.html)
+
 
 # Header 1
 ## Header 2
