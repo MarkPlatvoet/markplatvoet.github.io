@@ -5,5 +5,6 @@
 
 
 ### Testinging talend docs
-* [title](https://intodatabv.github.io/Talenddocumentation.github.io/ZipUitpakken_0.1.html)
+* [ZipUitpakken_0.1](https://intodatabv.github.io/Talenddocumentation.github.io/ZipUitpakken_0.1.html)
+* [ZipUitpakken_0.1](https://intodatabv.github.io/Talenddocumentation.github.io/ZipUitpakken_0.1.html)
 
