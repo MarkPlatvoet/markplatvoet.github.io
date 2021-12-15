@@ -1,3 +1,3 @@
 InToData_rgb_kleur_LR.png'
 
-![IntodataPic](![alt text](image.jpg))
+![IntodataPic](https://github.com/MarkPlatvoet/markplatvoet.github.io/blob/main/InToData_rgb_kleur_LR.png))
